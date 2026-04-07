@@ -3,6 +3,7 @@ from torch.utils.data import Dataset
 import pandas as pd
 from transformers import BertTokenizer
 
+#support ticket dataset
 class SupportTicketDataset(Dataset):
     def __init__(self, csv_file, tokenizer, max_length=128):
         self.data = pd.read_csv(csv_file)
